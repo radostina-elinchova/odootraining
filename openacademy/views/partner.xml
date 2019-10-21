@@ -11,7 +11,7 @@
                     <page string="Sessions">
                         <group>
                             <field name="instructor"/>
-                            <field name="session_ids"/>
+                            <field name="session_ids" attrs="{'invisible':[('instructor','=', False)]}/>
                         </group>
                     </page>
                 </notebook>
